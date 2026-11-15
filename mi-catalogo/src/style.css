@@ -97,4 +97,95 @@ footer p {
   main h2 {
     font-size: 28px;
   }
+
+  #buscar-titulo,
+  #filtro-genero {
+    width: 90%;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  #fondo-peliculas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#contenedor-peliculas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  padding: 30px 20px;
+}
+
+.tarjeta {
+  background-color: transparent;
+  color: #003da5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.tarjeta img:hover {
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+.tarjeta h3 {
+  min-height: 45px;
+  color: var(--color-destacado);
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+#buscar-titulo,
+#filtro-genero {
+  padding: 12px;
+  border: 2px solid var(--color-destacado);
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#buscar-titulo {
+  width: 250px;
+}
+
+#filtro-genero {
+  cursor: pointer;
+}
+
+#fondo-peliculas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  padding: 15px;
+  opacity: 0.12;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#fondo-peliculas img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
 }
