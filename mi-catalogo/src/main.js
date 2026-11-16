@@ -9,16 +9,29 @@ document.querySelector("#app").innerHTML = `
   </nav>
 </header>
 
-<section class="hero">
-  <div class="hero-contenido">
-    <h2>Descubrí tu próxima película</h2>
-    <p>Explorá películas, géneros y encontrá tu próxima historia.</p>
+<main>
+  <section class="hero">
+    <div class="hero-contenido">
+      <h2>Descubrí tu próxima película</h2>
+      <p>Explorá películas, géneros y encontrá tu próxima historia.</p>
     </div>
-</section>
-  <div class="hero-boton"> 
+  </section>
+
+  <section class="descripcion">
+    <h2>Sobre CartelerAPP</h2>
+    <p>
+      CartelerAPP es un catálogo de películas que te permite descubrir
+      los títulos más populares, conocer sus géneros y explorar nuevas
+      historias.
+    </p>
+  </section>
+
+  <div class="hero-boton">
     <a href="catalogo.html">Ver catálogo</a>
   </div>
-    <footer>
+</main>
+
+<footer>
   <p>© 2026 CartelerAPP - Programación 3 - Axel Dorado - TMDB API.</p>
 </footer>
 `;

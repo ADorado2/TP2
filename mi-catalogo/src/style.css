@@ -123,6 +123,7 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.3s;
 }
 
 .tarjeta:hover {
@@ -194,7 +195,7 @@ footer p {
   position: relative;
   width: 100%;
   min-height: 350px;
-  background-image: url("/hero.jpg.webp");
+  background-image: url("/hero.jpg");
   background-size: cover;
   background-position: center;
 
