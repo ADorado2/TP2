@@ -189,3 +189,50 @@ footer p {
   object-fit: cover;
   border-radius: 8px;
 }
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+  background-image: url("/hero.jpg.webp");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-contenido {
+  position: relative;
+  color: white;
+  padding: 20px;
+}
+
+.hero-boton {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.hero-boton a {
+  background-color: var(--color-destacado);
+  color: var(--color-principal);
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-boton a:hover {
+  background-color: var(--color-texto);
+}

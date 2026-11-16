@@ -106,7 +106,7 @@ function mostrarPeliculas(peliculas) {
 document.querySelector("#app").innerHTML = `
 <div id="fondo-peliculas"></div>
 <header>
-  <h1>CartelerAPP</h1>
+<h1>🍿 CARTELERAPP 🍿</h1>
   <nav>
     <a href="index.html">Inicio</a>
     <a href="catalogo.html">Catálogo</a>
