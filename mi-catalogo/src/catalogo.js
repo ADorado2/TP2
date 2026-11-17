@@ -29,7 +29,6 @@ async function cargarPeliculas() {
     if (!respuestaGeneros.ok) {
       throw new Error("No se pudieron cargar los géneros");
     }
-
     const datosGeneros = await respuestaGeneros.json();
     const filtroGenero = document.getElementById("filtro-genero");
     datosGeneros.genres.forEach((genero) => {
@@ -78,12 +77,16 @@ function mostrarPeliculas(peliculas) {
 
     const titulo = document.createElement("h3");
     titulo.textContent = pelicula.title;
-
+    const fechaEstreno = document.createElement("p");
+    fechaEstreno.classList.add("fecha-estreno");
+    fechaEstreno.textContent = `Estreno: ${pelicula.release_date.split("-")[0]}`;
     const imagen = document.createElement("img");
     imagen.src = `https://image.tmdb.org/t/p/w500${pelicula.poster_path}`;
     imagen.alt = pelicula.title;
     tarjeta.appendChild(titulo);
     tarjeta.appendChild(imagen);
+    tarjeta.appendChild(fechaEstreno);
+
     contenedor.appendChild(tarjeta);
   });
 }
