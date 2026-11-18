@@ -1,13 +1,12 @@
 :root {
   --color-principal: #003da5;
-  --color-fondo: #003da5;
   --color-texto: #ffffff;
   --color-destacado: #ffcc00;
 }
 
 body {
   margin: 0;
-  background-color: var(--color-fondo);
+  background-color: var(--color-principal);
   color: var(--color-texto);
   font-family: Arial, sans-serif;
 }
@@ -112,9 +111,9 @@ footer p {
 
 #contenedor-peliculas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 25px;
-  padding: 30px 20px;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
+  gap: 20px;
 }
 
 .tarjeta {
@@ -131,10 +130,9 @@ footer p {
 }
 
 .tarjeta img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  display: block;
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
 }
 
 .tarjeta img:hover {
